@@ -1,0 +1,14 @@
+﻿@model List<Octokit.User>
+@{
+    ViewBag.Title = "index";
+}
+
+<h2>List Users</h2>
+
+@{
+    foreach (Octokit.User user in Model)
+    {
+        <div>@user.Login, @user.Email</div>
+    }
+}
+
