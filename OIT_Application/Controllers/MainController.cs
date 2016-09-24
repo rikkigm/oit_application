@@ -13,13 +13,13 @@ namespace OIT_Application.Controllers
     public class MainController : Controller
     {
         //These would normally go in the config file. But is left here for easy review.
-        private string token = "30dc7b7c2097a5511d8e57f075892c4d50950682";
-        private string headerValue = "GetUsers";
-        private string org = "rikkigmbyu";
-        static string bucketName = "oitapplication";
-        static string keyName = "githubUserList";
-        static string awsAccessKeyID = "AKIAJMGOIU2XJI2GNRMA";
-        static string awsSecretAccessKey = "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";
+        private string token = "30dc7b7c2097a5511d8e57f075892c4d50950682"; //For Github
+        private string headerValue = "GetUsers"; //For Github, change not needed
+        private string org = "rikkigmbyu"; //Organization name
+        static string bucketName = "oitapplication"; //AWS bucket name
+        static string keyName = "githubUserList"; //name of object to be stored in bucket
+        static string awsAccessKeyID = "AKIAJMGOIU2XJI2GNRMA"; //For AWS
+        static string awsSecretAccessKey = "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"; //For AWS
         //Place smtp server name here
         static string server = "";
 
